@@ -1,4 +1,4 @@
-# FakeInventories [![](https://jitpack.io/v/JkqzDev/FakeInventories.svg)](https://jitpack.io/#JkqzDev/FakeInventories)
+# FakeInventories [![](https://jitpack.io/v/JkqzDev/FakeInventories-MOT.svg)](https://jitpack.io/#JkqzDev/FakeInventories-MOT)
 
 FakeInventories is a simple library plugin for Nukkit-MOT Minecraft Bedrock core, that will help you to create
 your custom virtual inventories with ease.
