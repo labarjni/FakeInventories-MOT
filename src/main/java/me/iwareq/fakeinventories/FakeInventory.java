@@ -79,11 +79,11 @@ public class FakeInventory extends BaseInventory {
                 itemSlots.add(slot.clone());
             }
         }
-
         List<Integer> emptySlots = new ArrayList<>();
 
         for (int i = 0; i < this.getSize(); ++i) {
             Item item = this.getItem(i);
+
             if (item.getId() == BlockID.AIR || item.getCount() <= 0) {
                 emptySlots.add(i);
             }
@@ -92,6 +92,7 @@ public class FakeInventory extends BaseInventory {
                 if (slot.equals(item) && item.getCount() < item.getMaxStackSize()) {
                     int amount = Math.min(item.getMaxStackSize() - item.getCount(), slot.getCount());
                     amount = Math.min(amount, this.getMaxStackSize());
+
                     if (amount > 0) {
                         slot.setCount(slot.getCount() - amount);
                         item.setCount(item.getCount() + amount);
