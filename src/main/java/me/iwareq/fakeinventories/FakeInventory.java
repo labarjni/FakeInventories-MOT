@@ -67,9 +67,7 @@ public class FakeInventory extends BaseInventory {
 
         super.onClose(player);
 
-        Server.getInstance().getScheduler().scheduleDelayedTask(FakeInventories.getInstance(), () -> {
-            this.fakeBlock.remove(player);
-        }, 5);
+        this.fakeBlock.remove(player);
     }
 
     public Item[] addItem(ItemHandler handler, Item... slots) {
