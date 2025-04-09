@@ -55,7 +55,7 @@ public class FakeInventory extends BaseInventory {
             super.onOpen(player);
 
             this.sendContents(player);
-        }, 5);
+        }, 10);
     }
 
     @Override
